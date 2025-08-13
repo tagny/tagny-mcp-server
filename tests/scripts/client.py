@@ -1,5 +1,6 @@
-from fastmcp.client import Client
 import asyncio
+
+from fastmcp.client import Client
 
 # Note the `sse` path post-fix for sse servers
 # For all transports, see https://gofastmcp.com/clients/client#transports

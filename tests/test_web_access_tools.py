@@ -1,3 +1,6 @@
+"""a module implementing a fastMCP client to test if the MCP server is started
+and if the MCP server's tools are working as expected"""
+
 import pytest
 from fastmcp.client import Client
 

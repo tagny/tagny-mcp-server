@@ -9,3 +9,4 @@
 * Added CHANGELOG.md for release notes
 * Added main.py as entry point
 * Added .pre-commit-config.yaml for code quality checks
+* Added workflow files for CI/CD pipelines that deliver to PyPI on Pull Request merge to the main branch
