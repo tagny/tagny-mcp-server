@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tagny-mcp-server"
+version = "0.1.0"
+description = "An MCP server with web search, URL text fetching, and more tools to enhance locally served LLMs"
+authors = [{name = "tagny ngompe", email = "tagny@ymail.com"}]
+readme = "README.md"
+requires-python = "<3.12,>=3.10"
+dependencies = [
+    "beautifulsoup4>=4.13.4",
+    "fastmcp>=2.11.3",
+    "requests>=2.32.4",
+]
+
+[project.scripts]
+mcp-server = "main:main"
+
+[dependency-groups]
+dev = [
+    "pre-commit>=4.3.0",
+    "pytest>=8.4.1",
+    "pytest-asyncio>=1.1.0",
+]
