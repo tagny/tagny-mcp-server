@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        python-version: ["3.10", "3.11"]
+        python-version: ["3.11"]
 
     steps:
     - uses: actions/checkout@v4
@@ -37,14 +37,14 @@ jobs:
 
     - name: Lint with black
       run: |
-        black --check src tests
+        black --target-version py311 --check src tests
 
     - name: Run tests
       run: |
         pytest tests/ -v
 
   build:
-    if: github.event_name == 'pull_request' && github.base_ref == 'main'
+    if: github.event.pull_request.merged == 'true' && github.base_ref == 'main'
     needs: test
     runs-on: ubuntu-latest
 
