@@ -8,3 +8,4 @@
 * Added README.md for project description and usage instructions
 * Added CHANGELOG.md for release notes
 * Added main.py as entry point
+* Added .pre-commit-config.yaml for code quality checks
