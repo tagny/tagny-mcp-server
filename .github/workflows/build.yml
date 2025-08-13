@@ -43,12 +43,6 @@ jobs:
     #   run: |
     #     pytest tests/ -v
 
-  build:
-    if: github.event.pull_request.merged == 'true' && github.base_ref == 'main'
-    needs: test
-    runs-on: ubuntu-latest
-
-    steps:
     - uses: actions/checkout@v4
 
     - name: Set up Python
@@ -62,9 +56,3 @@ jobs:
     - name: Build package
       run: |
         uv build
-
-    - name: Publish to PyPI
-      env:
-        PYPI_TOKEN: ${{ secrets.PYPI_API_TOKEN }}
-      run: |
-        uv publish --token $PYPI_TOKEN
