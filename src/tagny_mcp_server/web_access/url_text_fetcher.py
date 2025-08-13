@@ -1,7 +1,11 @@
+"""A module implementing tools to get data from web pages (e.g. text and URL links)"""
+
 from typing import List
+
 import requests
 from bs4 import BeautifulSoup
-from config import mcp
+
+from tagny_mcp_server.config import mcp
 
 
 def extract_text_from_html(html_content):

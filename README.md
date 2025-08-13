@@ -9,16 +9,35 @@ An MCP server with web search, URL text fetching, and more tools to enhance loca
 
 ## Installation
 
+* from source
 ```bash
-pip install .
+uv pip install -e .
+uv pip install -e ".[dev]"
 ```
-
+* from PyPI repository
+```sh
+pip install tagny-mcp-server
+```
 ## Usage
 
 Start the MCP server:
 
-```bash
-uv run main.py
+* from source code:
+```sh
+uv run -m tagny_mcp_server
+```
+* after proper installation:
+  - as described in the pyproject.toml at `project.scripts`, you can run the with the default arguments :
+```sh
+tagny-mcp-server
+```
+  - customize the arguments by running like this for example:
+```sh
+# see the help
+python -m tagny_mcp_server --help
+
+# change the default port
+python -m tagny_mcp_server --port 5002
 ```
 
 The server will run using Server-Sent Events (SSE) transport.
@@ -48,10 +67,10 @@ Returns a list of all hyperlinks found on a webpage.
 
 ## Testing
 
-Tests are located in `tests/test_web_access_tools.py` and can be run with pytest:
+Tests are located in `tests/` and can be run with pytest:
 
 ```bash
-pytest tests/test_web_access_tools.py
+pytest
 ```
 
 Example client usage is shown in `scripts/client.py`.
