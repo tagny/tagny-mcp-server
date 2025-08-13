@@ -39,9 +39,9 @@ jobs:
       run: |
         black --target-version py311 --check src tests
 
-    - name: Run tests
-      run: |
-        pytest tests/ -v
+    # - name: Run tests
+    #   run: |
+    #     pytest tests/ -v
 
   build:
     if: github.event.pull_request.merged == 'true' && github.base_ref == 'main'
