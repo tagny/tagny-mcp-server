@@ -60,6 +60,12 @@ Downloads and parses HTML content from a URL, returning only the visible text.
 ### `fetch_page_links`
 Returns a list of all hyperlinks found on a webpage.
 
+### `search_web_with_brave`
+An MCP tool that performs web searches using Brave search engine
+
+### `search_web_with_duckduckgo`
+An MCP tool that performs web searches using DuckDuckGo
+
 ## Project Structure
 
 - `src/tagny_mcp_server/__init__.py` - Main package initializer that exports the version
