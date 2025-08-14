@@ -65,14 +65,14 @@ To update the version:
 
 1. **For minor releases** (backwards compatible changes):
    ```bash
-   # Using bump2version
-   bump2version patch  # for bug fixes
-   bump2version minor  # improvements of current tools (e.g. complexity)
+   # Using bump-my-version
+   bump-my-version bump patch  # for bug fixes
+   bump-my-version bump minor  # improvements of current tools (e.g. complexity)
    ```
 
 2. **For major releases** (breaking changes):
    ```bash
-   bump2version major  # for new features (new tools) and breaking changes
+   bump-my-version bump major  # for new features (new tools) and breaking changes
    ```
 
 3. **Manual version update**:
