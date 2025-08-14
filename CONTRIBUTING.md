@@ -62,12 +62,12 @@ To update the version:
    ```bash
    # Using bump2version
    bump2version patch  # for bug fixes
-   bump2version minor  # for new features (new tools)
+   bump2version minor  # improvements of current tools (e.g. complexity)
    ```
 
 2. **For major releases** (breaking changes):
    ```bash
-   bump2version major  # end of milestone or modifications that might brake previous integrations
+   bump2version major  # for new features (new tools) and breaking changes
    ```
 
 3. **Manual version update**:
@@ -91,3 +91,7 @@ To update the version:
 ### License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Pull Request Template
+
+See the [PR template](.github/pull_request_template.md)
