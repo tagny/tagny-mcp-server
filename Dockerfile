@@ -6,7 +6,6 @@ FROM ghcr.io/astral-sh/uv:python3.11-alpine
 LABEL org.opencontainers.image.created="2025-08-14T21:30:38.320Z"
 LABEL org.opencontainers.image.description="An MCP server with web search, URL text fetching, and more tools to enhance locally served LLMs."
 LABEL org.opencontainers.image.licenses="MIT"
-LABEL org.opencontainers.image.revision="dcea882c4d8d8fcb5b2f558a461e86be3ef35fc7 "
 LABEL org.opencontainers.image.source="https://github.com/tagny/tagny-mcp-server"
 LABEL org.opencontainers.image.title="tagny-mcp-server"
 LABEL org.opencontainers.image.url="https://github.com/tagny/tagny-mcp-server"
