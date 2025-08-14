@@ -13,6 +13,11 @@ If you find a bug or have a feature request, please open an issue on the GitHub 
 - Expected behavior
 - Environment details (Python version, OS, etc.)
 
+Please follow available templates:
+- [Feature Request Template](.github/ISSUE_TEMPLATE/feature_request.md)
+- [Bug Report Template](.github/ISSUE_TEMPLATE/bug_report.md)
+- [Custom Request Template](.github/ISSUE_TEMPLATE/custom.md)
+
 ### Pull Requests
 
 We welcome pull requests that improve the project. Before submitting a pull request, please:
