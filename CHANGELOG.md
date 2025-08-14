@@ -10,3 +10,6 @@
 * Added main.py as entry point
 * Added .pre-commit-config.yaml for code quality checks
 * Added workflow files for CI/CD pipelines that deliver to PyPI on Pull Request merge to the main branch
+* Added bump-my-version configuration .bumpversion.toml for version management
+* Added template files for GitHub issues and pull requests
+* Added CONTRIBUTING.md for contribution guidelines

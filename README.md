@@ -62,12 +62,24 @@ Returns a list of all hyperlinks found on a webpage.
 
 ## Project Structure
 
-- `main.py` - Entry point that launches the MCP server
-- `config.py` - MCP server configuration
-- `web_access/` - Contains web access tools:
-  - `url_text_fetcher.py` - Implements URL text fetching and link extraction
-- `pyproject.toml` - Project metadata and dependencies
-- `scripts/client.py` - Example client script for testing the server
+- `src/tagny_mcp_server/__init__.py` - Main package initializer that exports the version
+- `src/tagny_mcp_server/__main__.py` - Entry point that launches the MCP server with command-line arguments
+- `src/tagny_mcp_server/__version__.py` - Contains the package version string
+- `src/tagny_mcp_server/config.py` - Configures the FastMCP server instance with name, instructions, and version
+- `src/tagny_mcp_server/web_access/__init__.py` - Package initializer for web access tools that exports URL text fetching functions
+- `src/tagny_mcp_server/web_access/url_text_fetcher.py` - Implements tools for fetching URL text and extracting links from web pages
+- `pyproject.toml` - Project metadata, dependencies, and build configuration
+- `tests/scripts/client.py` - Example client script for testing the server
+- `tests/test_web_access_tools.py` - Tests for the web access tools
+- `.gitignore` - Git ignore rules
+- `README.md` - Project documentation
+- `LICENSE` - License information
+- `CHANGELOG.md` - Release notes and version history
+- `CONTRIBUTING.md` - Guidelines for contributing to the project
+- `.pre-commit-config.yaml` - Pre-commit hooks configuration
+- `.python-version` - Python version specification
+- `.bumpversion.toml` - Configuration for version bumping tool
+- `.github/` - GitHub workflow and issue template files
 
 ## Dependencies
 
