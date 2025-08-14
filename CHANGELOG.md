@@ -15,8 +15,9 @@
 * Added CONTRIBUTING.md for contribution guidelines
 
 ## v1.0.0
-* Added web search functionality using Brave Search API
+* Added web search tool using Brave Search
 * Updated README.md with correct GitHub Actions workflow URL
 * Enhanced tool registration to include new web search tool
 * Rename test file for web access tools to `test_url_text_fetcher_tools.py`
-* Added more comprehensive tests for the web search tool
+* Added more comprehensive tests for the web search tool Brave Search
+* Added web search tool using DuckDuckGo Search

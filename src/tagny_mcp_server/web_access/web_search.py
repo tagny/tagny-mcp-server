@@ -7,6 +7,7 @@ from urllib.parse import quote
 
 import requests
 from bs4 import BeautifulSoup
+from ddgs import DDGS
 
 from tagny_mcp_server.config import mcp
 
@@ -175,3 +176,13 @@ def search_web_with_brave(query: str) -> Dict[str, Any]:
     """MCP tool that launch search with Brave"""
     engine = BraveWrapper(request_delay=1.0)
     return engine.search(query)
+
+
+@mcp.tool
+def search_web_with_duckduckgo(query: str, max_results: int = 5) -> Dict[str, Any]:
+    """MCP tool that launch search with DuckDuckGo"""
+    try:
+        results = DDGS().text(query, max_results=max_results)
+        return {"query": query, "results": results}
+    except requests.exceptions.RequestException as ex:
+        return {"query": query, "error": f"Error fetching results: {ex}"}

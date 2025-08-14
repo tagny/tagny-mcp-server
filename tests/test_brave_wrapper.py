@@ -41,7 +41,7 @@ def test_brave_wrapper_search_empty_query():
 if __name__ == "__main__":
     # This is the specific test case from your request
     search_engine = BraveWrapper(request_delay=1.0)
-    search_result = search_engine.search("classic children's poems")
+    search_result = search_engine.search("classic poems")
 
     print(f"Search result: {search_result}")
     assert search_result is not None

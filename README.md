@@ -68,6 +68,7 @@ Returns a list of all hyperlinks found on a webpage.
 - `src/tagny_mcp_server/config.py` - Configures the FastMCP server instance with name, instructions, and version
 - `src/tagny_mcp_server/web_access/__init__.py` - Package initializer for web access tools that exports URL text fetching functions
 - `src/tagny_mcp_server/web_access/url_text_fetcher.py` - Implements tools for fetching URL text and extracting links from web pages
+- `src/tagny_mcp_server/web_access/web_search.py` - Implements Brave and DuckDuckGo search tools
 - `pyproject.toml` - Project metadata, dependencies, and build configuration
 - `tests/scripts/client.py` - Example client script for testing the server
 - `tests/test_web_access_tools.py` - Tests for the web access tools
