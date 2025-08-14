@@ -21,3 +21,6 @@
 * Rename test file for web access tools to `test_url_text_fetcher_tools.py`
 * Added more comprehensive tests for the web search tool Brave Search
 * Added web search tool using DuckDuckGo Search
+
+## v1.0.1
+* bump version to 1.0.1 to fix error when publishing to PyPI due to broken version 1.0.0
