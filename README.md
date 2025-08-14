@@ -19,7 +19,7 @@ An MCP server with web search, URL text fetching, and more tools to enhance loca
 uv pip install -e .
 
 # with dev dependencies
-uv pip install -e ".[dev]"
+uv sync
 ```
 * from PyPI repository
 ```sh
