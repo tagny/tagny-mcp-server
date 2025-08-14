@@ -41,10 +41,13 @@ tagny-mcp-server
   - customize the arguments by running like this for example:
 ```sh
 # see the help
-python -m tagny_mcp_server --help
+uv run -m tagny_mcp_server --help
+
+# see the version
+uv run -m tagny_mcp_server --version
 
 # change the default port
-python -m tagny_mcp_server --port 5002
+uv run -m tagny_mcp_server --port 5002
 ```
 
 The server will run using Server-Sent Events (SSE) transport.
