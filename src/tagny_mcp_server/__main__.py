@@ -6,7 +6,11 @@ from tagny_mcp_server import __version__
 from tagny_mcp_server.config import mcp
 
 # import tools to make them available
-from tagny_mcp_server.web_access import fetch_page_links, fetch_url_text  # noqa: F401
+from tagny_mcp_server.web_access import (  # noqa: F401
+    fetch_page_links,
+    fetch_url_text,
+    search_web_with_brave,
+)
 
 
 def main(

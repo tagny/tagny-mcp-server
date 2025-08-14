@@ -2,7 +2,7 @@
 An MCP server with web search, URL text fetching, and more tools to enhance locally served LLMs.
 
 [![GitHub License](https://img.shields.io/github/license/tagny/tagny-mcp-server)](LICENSE)
-[![GitHub Actions Workflow](https://github.com/tagny/tagny-mcp-server/actions/workflows/build.yml/badge.svg)](https://github.com/yourusername/tagny-mcp-server/actions/workflows/build.yml)
+[![GitHub Actions Workflow](https://github.com/tagny/tagny-mcp-server/actions/workflows/build.yml/badge.svg)](https://github.com/tagny/tagny-mcp-server/actions/workflows/build.yml)
 [![PyPI Version](https://img.shields.io/pypi/v/tagny-mcp-server)](https://pypi.org/project/tagny-mcp-server/)
 [![Code Quality](https://img.shields.io/badge/code%20quality-ruff-blue)](https://github.com/astral-sh/ruff)
 
@@ -68,6 +68,7 @@ Returns a list of all hyperlinks found on a webpage.
 - `src/tagny_mcp_server/config.py` - Configures the FastMCP server instance with name, instructions, and version
 - `src/tagny_mcp_server/web_access/__init__.py` - Package initializer for web access tools that exports URL text fetching functions
 - `src/tagny_mcp_server/web_access/url_text_fetcher.py` - Implements tools for fetching URL text and extracting links from web pages
+- `src/tagny_mcp_server/web_access/web_search.py` - Implements Brave and DuckDuckGo search tools
 - `pyproject.toml` - Project metadata, dependencies, and build configuration
 - `tests/scripts/client.py` - Example client script for testing the server
 - `tests/test_web_access_tools.py` - Tests for the web access tools
