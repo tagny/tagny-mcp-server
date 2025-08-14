@@ -2,7 +2,7 @@
 An MCP server with web search, URL text fetching, and more tools to enhance locally served LLMs.
 
 [![GitHub License](https://img.shields.io/github/license/tagny/tagny-mcp-server)](LICENSE)
-[![GitHub Actions Workflow](https://github.com/tagny/tagny-mcp-server/actions/workflows/build.yml/badge.svg)](https://github.com/yourusername/tagny-mcp-server/actions/workflows/build.yml)
+[![GitHub Actions Workflow](https://github.com/tagny/tagny-mcp-server/actions/workflows/build.yml/badge.svg)](https://github.com/tagny/tagny-mcp-server/actions/workflows/build.yml)
 [![PyPI Version](https://img.shields.io/pypi/v/tagny-mcp-server)](https://pypi.org/project/tagny-mcp-server/)
 [![Code Quality](https://img.shields.io/badge/code%20quality-ruff-blue)](https://github.com/astral-sh/ruff)
 
