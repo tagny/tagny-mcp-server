@@ -25,6 +25,7 @@ uv sync
 ```sh
 pip install tagny-mcp-server
 ```
+
 ## Usage
 
 Start the MCP server:
@@ -138,6 +139,32 @@ For more information, see [.pre-commit-config.yaml](.pre-commit-config.yaml).
 This project uses GitHub Actions for continuous integration and deployment:
 
 - [Build workflow](.github/workflows/build.yml) - runs tests and code quality checks
-- [Publish workflow](.github/workflows/publish.yml) - publishes to PyPI on release
+- [Publish to Docker Hub](.github/workflows/publish2docker.yml) - publishes the Docker image on release
+- [Publish to PyPI](.github/workflows/publish2pypi.yml) - publishes to PyPI on release
 
 For more information, see [.github/workflows](.github/workflows).
+
+## Running with Docker
+
+You can build and run the Docker container using the provided `Dockerfile`. To test locally, you can use [act](https://nektos.github.io/act/) following the instructions at [https://nektos.github.io/act/](https://nektos.github.io/act/).
+
+```bash
+# Build the Docker image
+docker build -t tagny-mcp-server .
+
+# Run the Docker container
+docker run -p 8000:8000 tagny-mcp-server
+```
+
+This will start the MCP server inside a Docker container, accessible at `http://localhost:8000/sse`.
+
+That you can integrate in a `mcp.json` file like this:
+```json
+{
+  "mcpServers": {
+    "tagny-mcp-server": {
+      "url": "http://localhost:8000/sse"
+    }
+  }
+}
+```
