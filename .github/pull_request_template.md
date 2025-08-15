@@ -22,7 +22,6 @@ Fixes # (issue)
 ## TODO checklist
 
 ### Project Setup and Configuration
-- [ ] Updated `pyproject.toml` version following SemVer principles
 - [ ] Updated `CHANGELOG.md` with description of changes for the new version
 - [ ] Verified that all dependencies in `pyproject.toml` are up-to-date and correctly specified
 - [ ] Confirmed that `pre-commit` hooks are properly installed and working
@@ -31,11 +30,12 @@ Fixes # (issue)
 - [ ] All code follows project's style guidelines (black, flake8, isort, ruff)
 - [ ] Added or updated tests in `tests/` directory
 - [ ] All tests pass successfully (`pytest`)
-- [ ] Verified that new functionality works as expected with example client script
+- [ ] Verified that new functionality works as expected
 
 ### Documentation and Readme Updates
 - [ ] Updated `README.md` with any new features or changes
 - [ ] Updated `CONTRIBUTING.md` if there are changes to contribution guidelines
+- [ ] Verifed theGithub Actions workflow `.github/workflows/build.yml` is locally working with `act`
 - [ ] Ensured all code examples in documentation are working
 - [ ] Verified that installation instructions work correctly
 
@@ -46,19 +46,12 @@ Fixes # (issue)
 - [ ] Code follows existing project style and conventions
 
 ### Code Quality and Compliance
-- [ ] All pre-commit hooks pass successfully
-- [ ] Code is formatted with black and sorted with isort
-- [ ] Linting passes without errors
+- [ ] Confirmed that `pre-commit` hooks are properly installed and passed successfully
 - [ ] No secrets detected in the codebase
-- [ ] Version number updated in `pyproject.toml` and `CHANGELOG.md`
+- [ ] Version number updated in `CHANGELOG.md`
 
 ### Release Preparation
-- [ ] Version bumped appropriately in `pyproject.toml`
-- [ ] Changelog updated with release notes
-- [ ] All tests pass
-- [ ] Documentation updated as needed
-- [ ] Pre-commit hooks installed and working
-- [ ] All automated tests pass locally after starting a server with default arguments
+- [ ] Version bumped appropriately in `src/tagny_mcp_server/__version__.py` following SemVer principles
 - [ ] Build workflow passes
 
 ### Final Checks

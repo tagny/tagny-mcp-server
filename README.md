@@ -5,6 +5,8 @@ An MCP server with web search, URL text fetching, and more tools to enhance loca
 [![GitHub Actions Workflow](https://github.com/tagny/tagny-mcp-server/actions/workflows/build.yml/badge.svg)](https://github.com/tagny/tagny-mcp-server/actions/workflows/build.yml)
 [![PyPI Version](https://img.shields.io/pypi/v/tagny-mcp-server)](https://pypi.org/project/tagny-mcp-server/)
 [![Code Quality](https://img.shields.io/badge/code%20quality-ruff-blue)](https://github.com/astral-sh/ruff)
+[![Contributors](
+https://img.shields.io/github/contributors/tagny/tagny-mcp-server)](https://github.com/tagny/tagny-mcp-server)
 
 ## Features
 
@@ -19,12 +21,13 @@ An MCP server with web search, URL text fetching, and more tools to enhance loca
 uv pip install -e .
 
 # with dev dependencies
-uv pip install -e ".[dev]"
+uv sync
 ```
 * from PyPI repository
 ```sh
 pip install tagny-mcp-server
 ```
+
 ## Usage
 
 Start the MCP server:
@@ -138,6 +141,32 @@ For more information, see [.pre-commit-config.yaml](.pre-commit-config.yaml).
 This project uses GitHub Actions for continuous integration and deployment:
 
 - [Build workflow](.github/workflows/build.yml) - runs tests and code quality checks
-- [Publish workflow](.github/workflows/publish.yml) - publishes to PyPI on release
+- [Publish to Docker Hub](.github/workflows/publish2docker.yml) - publishes the Docker image on release
+- [Publish to PyPI](.github/workflows/publish2pypi.yml) - publishes to PyPI on release
 
 For more information, see [.github/workflows](.github/workflows).
+
+## Running with Docker
+
+You can build and run the Docker container using the provided `Dockerfile`. To test locally, you can use [act](https://nektos.github.io/act/) following the instructions at [https://nektos.github.io/act/](https://nektos.github.io/act/).
+
+```bash
+# Build the Docker image
+docker build -t tagny-mcp-server .
+
+# Run the Docker container
+docker run -p 8000:8000 tagny-mcp-server
+```
+
+This will start the MCP server inside a Docker container, accessible at `http://localhost:8000/sse`.
+
+That you can integrate in a `mcp.json` file like this:
+```json
+{
+  "mcpServers": {
+    "tagny-mcp-server": {
+      "url": "http://localhost:8000/sse"
+    }
+  }
+}
+```

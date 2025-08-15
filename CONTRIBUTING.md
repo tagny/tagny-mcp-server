@@ -100,3 +100,35 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Pull Request Template
 
 See the [PR template](.github/pull_request_template.md)
+
+### Testing GitHub Actions Locally
+
+You can use the `act` tool to run GitHub Actions workflows locally. Follow these steps to set it up and use it:
+
+1. **Install `act`:**
+
+See https://nektosact.com/installation/index.html for installation instructions.
+
+   ```bash
+   brew install act  # On macOS using Homebrew
+   sudo apt-get install act  # On Ubuntu/Debian
+   ```
+
+2. **Configure `act`:**
+
+   Create a `.actrc` file in your project root to configure the tool:
+
+   ```ini
+   -P ubuntu-latest=nektos/act-environments-ubuntu:18.04
+   ```
+
+3. **Run GitHub Actions Locally:**
+
+   Use the following command to run all workflows or a specific workflow:
+
+   ```bash
+   act  # Run all workflows
+   act .github/workflows/build.yml  # Run a specific workflow
+   ```
+
+This will allow you to test your GitHub Actions locally before pushing changes.
