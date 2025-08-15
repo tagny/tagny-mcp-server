@@ -5,6 +5,7 @@
 * Renamed and updated GitHub Actions workflow to publish package to PyPI
 * Renamed and updated GitHub Actions workflow to use uv for building and testing package
 * Updated README.md with instructions on running the server with Docker
+* Added instructions on testing GitHub Actions locally in CONTRIBUTING.md
 
 ## v1.0.1
 * bump version to 1.0.1 to fix error when publishing to PyPI due to broken version 1.0.0
