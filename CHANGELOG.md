@@ -1,7 +1,9 @@
 ## v1.0.2
-* Updated version to 1.0.2 in __version__.py
 * Added Dockerfile for containerization
-* Updated .bumpversion.toml with new version
+* Updated .bumpversion.toml with new version 1.0.2
+* Added GitHub Actions workflow to publish Docker image to Docker
+* Renammed and updated GitHub Actions workflow to publish package to PyPI
+* Renammed and updated GitHub Actions workflow to use uv for building and testing package
 
 ## v1.0.1
 * bump version to 1.0.1 to fix error when publishing to PyPI due to broken version 1.0.0
