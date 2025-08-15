@@ -5,6 +5,8 @@ An MCP server with web search, URL text fetching, and more tools to enhance loca
 [![GitHub Actions Workflow](https://github.com/tagny/tagny-mcp-server/actions/workflows/build.yml/badge.svg)](https://github.com/tagny/tagny-mcp-server/actions/workflows/build.yml)
 [![PyPI Version](https://img.shields.io/pypi/v/tagny-mcp-server)](https://pypi.org/project/tagny-mcp-server/)
 [![Code Quality](https://img.shields.io/badge/code%20quality-ruff-blue)](https://github.com/astral-sh/ruff)
+[![Contributors](
+https://img.shields.io/github/contributors/tagny/tagny-mcp-server)](https://github.com/tagny/tagny-mcp-server)
 
 ## Features
 
